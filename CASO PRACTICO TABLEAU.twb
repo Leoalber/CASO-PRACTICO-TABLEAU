@@ -1,0 +1,822 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='HRDataset' inline='true' name='federated.1s9377l1rg3zxw161npmg0lfbz96' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='HRDataset' name='textscan.1j3ph201aw9e22163afml0tqwllf'>
+            <connection class='textscan' directory='C:/Users/leoal/OneDrive/Escritorio/DIPLOMADO CIENCIA DE DATOS/CLASES DIPLOMADO ANALISIS DE DATOS/Tableau/Material práctico-20240729/Caso práctico' filename='HRDataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1j3ph201aw9e22163afml0tqwllf' name='HRDataset.csv' table='[HRDataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+            <column datatype='string' name='Employee_Name' ordinal='0' />
+            <column datatype='integer' name='EmpID' ordinal='1' />
+            <column datatype='integer' name='Salary' ordinal='2' />
+            <column datatype='string' name='Position' ordinal='3' />
+            <column datatype='string' name='State' ordinal='4' />
+            <column datatype='string' name='Sex' ordinal='5' />
+            <column datatype='string' name='MaritalDesc' ordinal='6' />
+            <column datatype='date' name='DateofHire' ordinal='7' />
+            <column datatype='date' name='DateofTermination' ordinal='8' />
+            <column datatype='string' name='TermReason' ordinal='9' />
+            <column datatype='string' name='EmploymentStatus' ordinal='10' />
+            <column datatype='string' name='Department' ordinal='11' />
+            <column datatype='string' name='ManagerName' ordinal='12' />
+            <column datatype='integer' name='ManagerID' ordinal='13' />
+            <column datatype='string' name='RecruitmentSource' ordinal='14' />
+            <column datatype='string' name='PerformanceScore' ordinal='15' />
+            <column datatype='integer' name='EmpSatisfaction' ordinal='16' />
+            <column datatype='integer' name='SpecialProjectsCount' ordinal='17' />
+            <column datatype='date' name='LastPerformanceReview_Date' ordinal='18' />
+            <column datatype='integer' name='DaysLateLast30' ordinal='19' />
+            <column datatype='integer' name='Absences' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1j3ph201aw9e22163afml0tqwllf' name='HRDataset.csv' table='[HRDataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+            <column datatype='string' name='Employee_Name' ordinal='0' />
+            <column datatype='integer' name='EmpID' ordinal='1' />
+            <column datatype='integer' name='Salary' ordinal='2' />
+            <column datatype='string' name='Position' ordinal='3' />
+            <column datatype='string' name='State' ordinal='4' />
+            <column datatype='string' name='Sex' ordinal='5' />
+            <column datatype='string' name='MaritalDesc' ordinal='6' />
+            <column datatype='date' name='DateofHire' ordinal='7' />
+            <column datatype='date' name='DateofTermination' ordinal='8' />
+            <column datatype='string' name='TermReason' ordinal='9' />
+            <column datatype='string' name='EmploymentStatus' ordinal='10' />
+            <column datatype='string' name='Department' ordinal='11' />
+            <column datatype='string' name='ManagerName' ordinal='12' />
+            <column datatype='integer' name='ManagerID' ordinal='13' />
+            <column datatype='string' name='RecruitmentSource' ordinal='14' />
+            <column datatype='string' name='PerformanceScore' ordinal='15' />
+            <column datatype='integer' name='EmpSatisfaction' ordinal='16' />
+            <column datatype='integer' name='SpecialProjectsCount' ordinal='17' />
+            <column datatype='date' name='LastPerformanceReview_Date' ordinal='18' />
+            <column datatype='integer' name='DaysLateLast30' ordinal='19' />
+            <column datatype='integer' name='Absences' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_MX&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Employee_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Employee_Name]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>Employee_Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmpID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EmpID]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>EmpID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Salary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Salary]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>Salary</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Position</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Position]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>Position</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sex]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>Sex</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MaritalDesc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MaritalDesc]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>MaritalDesc</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DateofHire</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[DateofHire]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>DateofHire</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DateofTermination</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[DateofTermination]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>DateofTermination</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TermReason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TermReason]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>TermReason</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmploymentStatus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EmploymentStatus]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>EmploymentStatus</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Department</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Department]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>Department</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ManagerName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ManagerName]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>ManagerName</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ManagerID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ManagerID]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>ManagerID</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RecruitmentSource</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RecruitmentSource]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>RecruitmentSource</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PerformanceScore</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PerformanceScore]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>PerformanceScore</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmpSatisfaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EmpSatisfaction]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>EmpSatisfaction</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SpecialProjectsCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SpecialProjectsCount]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>SpecialProjectsCount</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LastPerformanceReview_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[LastPerformanceReview_Date]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>LastPerformanceReview_Date</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DaysLateLast30</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DaysLateLast30]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>DaysLateLast30</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Absences</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Absences]</local-name>
+            <parent-name>[HRDataset.csv]</parent-name>
+            <remote-alias>Absences</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Dateof Hire' datatype='date' name='[DateofHire]' role='dimension' type='ordinal' />
+      <column caption='Dateof Termination' datatype='date' name='[DateofTermination]' role='dimension' type='ordinal' />
+      <column caption='Emp ID' datatype='integer' name='[EmpID]' role='dimension' type='ordinal' />
+      <column caption='Emp Satisfaction' datatype='integer' name='[EmpSatisfaction]' role='measure' type='quantitative' />
+      <column caption='Employee Name' datatype='string' name='[Employee_Name]' role='dimension' type='nominal' />
+      <column caption='Employment Status' datatype='string' name='[EmploymentStatus]' role='dimension' type='nominal' />
+      <column caption='LastPerformanceReview Date' datatype='date' name='[LastPerformanceReview_Date]' role='dimension' type='ordinal' />
+      <column caption='Manager ID' datatype='integer' name='[ManagerID]' role='dimension' type='ordinal' />
+      <column caption='Manager Name' datatype='string' name='[ManagerName]' role='dimension' type='nominal' />
+      <column caption='Marital Desc' datatype='string' name='[MaritalDesc]' role='dimension' type='nominal' />
+      <column caption='Performance Score' datatype='string' name='[PerformanceScore]' role='dimension' type='nominal' />
+      <column caption='Recruitment Source' datatype='string' name='[RecruitmentSource]' role='dimension' type='nominal' />
+      <column caption='Special Projects Count' datatype='integer' name='[SpecialProjectsCount]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Term Reason' datatype='string' name='[TermReason]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='HRDataset.csv' datatype='table' name='[__tableau_internal_object_id__].[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/leoal/AppData/Local/Temp/TableauTemp/#TableauTemp_13lna0x0gpmvff1aensvy0byy2tx.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/05/2024 04:03:27 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Employee_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Employee_Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Employee_Name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EmpID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[EmpID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmpID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>311</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Salary</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Salary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Salary</remote-alias>
+              <ordinal>2</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>308</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Position</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Position]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Position</remote-alias>
+              <ordinal>3</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>4</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sex</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sex]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sex</remote-alias>
+              <ordinal>5</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MaritalDesc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MaritalDesc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MaritalDesc</remote-alias>
+              <ordinal>6</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DateofHire</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[DateofHire]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DateofHire</remote-alias>
+              <ordinal>7</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>101</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DateofTermination</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[DateofTermination]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DateofTermination</remote-alias>
+              <ordinal>8</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>97</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TermReason</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TermReason]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TermReason</remote-alias>
+              <ordinal>9</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EmploymentStatus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[EmploymentStatus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmploymentStatus</remote-alias>
+              <ordinal>10</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Department</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Department]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Department</remote-alias>
+              <ordinal>11</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ManagerName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ManagerName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ManagerName</remote-alias>
+              <ordinal>12</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ManagerID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ManagerID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ManagerID</remote-alias>
+              <ordinal>13</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RecruitmentSource</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[RecruitmentSource]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RecruitmentSource</remote-alias>
+              <ordinal>14</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PerformanceScore</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PerformanceScore]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PerformanceScore</remote-alias>
+              <ordinal>15</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EmpSatisfaction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[EmpSatisfaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmpSatisfaction</remote-alias>
+              <ordinal>16</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SpecialProjectsCount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SpecialProjectsCount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SpecialProjectsCount</remote-alias>
+              <ordinal>17</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LastPerformanceReview_Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[LastPerformanceReview_Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LastPerformanceReview_Date</remote-alias>
+              <ordinal>18</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>137</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DaysLateLast30</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DaysLateLast30]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DaysLateLast30</remote-alias>
+              <ordinal>19</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Absences</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Absences]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Absences</remote-alias>
+              <ordinal>20</ordinal>
+              <family>HRDataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Estados Unidos Mexicanos&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='HRDataset.csv' id='HRDataset.csv_53B0F8B695B3497D8D57EDA8C8389482'>
+            <properties context=''>
+              <relation connection='textscan.1j3ph201aw9e22163afml0tqwllf' name='HRDataset.csv' table='[HRDataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+                  <column datatype='string' name='Employee_Name' ordinal='0' />
+                  <column datatype='integer' name='EmpID' ordinal='1' />
+                  <column datatype='integer' name='Salary' ordinal='2' />
+                  <column datatype='string' name='Position' ordinal='3' />
+                  <column datatype='string' name='State' ordinal='4' />
+                  <column datatype='string' name='Sex' ordinal='5' />
+                  <column datatype='string' name='MaritalDesc' ordinal='6' />
+                  <column datatype='date' name='DateofHire' ordinal='7' />
+                  <column datatype='date' name='DateofTermination' ordinal='8' />
+                  <column datatype='string' name='TermReason' ordinal='9' />
+                  <column datatype='string' name='EmploymentStatus' ordinal='10' />
+                  <column datatype='string' name='Department' ordinal='11' />
+                  <column datatype='string' name='ManagerName' ordinal='12' />
+                  <column datatype='integer' name='ManagerID' ordinal='13' />
+                  <column datatype='string' name='RecruitmentSource' ordinal='14' />
+                  <column datatype='string' name='PerformanceScore' ordinal='15' />
+                  <column datatype='integer' name='EmpSatisfaction' ordinal='16' />
+                  <column datatype='integer' name='SpecialProjectsCount' ordinal='17' />
+                  <column datatype='date' name='LastPerformanceReview_Date' ordinal='18' />
+                  <column datatype='integer' name='DaysLateLast30' ordinal='19' />
+                  <column datatype='integer' name='Absences' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{28ECF164-0131-40CE-9565-C5C78AE733CF}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{220DA1A8-F63C-4783-A399-509CA856928F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Hoja 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
